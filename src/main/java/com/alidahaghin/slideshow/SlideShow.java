@@ -88,12 +88,6 @@ public class SlideShow extends JFrame implements KeyListener {
         chosenDir = new File(jFileChooser.getSelectedFile().getAbsolutePath());
         chooseDirButton.setVisible(false);
 
-        this.dispose();
-        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        this.setUndecorated(true);
-        this.pack();
-        this.setVisible(true);
-
         weAreInSlideShow = true;
 
         loadPics();
